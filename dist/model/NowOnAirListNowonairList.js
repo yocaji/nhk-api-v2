@@ -9,8 +9,6 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _NowOnAir = _interopRequireDefault(require("./NowOnAir"));
 
-var _Program = _interopRequireDefault(require("./Program"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -63,75 +61,75 @@ var NowOnAirListNowonairList = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('g2')) {
-          obj['g2'] = _Program["default"].constructFromObject(data['g2']);
+          obj['g2'] = _NowOnAir["default"].constructFromObject(data['g2']);
         }
 
         if (data.hasOwnProperty('e1')) {
-          obj['e1'] = _Program["default"].constructFromObject(data['e1']);
+          obj['e1'] = _NowOnAir["default"].constructFromObject(data['e1']);
         }
 
         if (data.hasOwnProperty('e2')) {
-          obj['e2'] = _Program["default"].constructFromObject(data['e2']);
+          obj['e2'] = _NowOnAir["default"].constructFromObject(data['e2']);
         }
 
         if (data.hasOwnProperty('e3')) {
-          obj['e3'] = _Program["default"].constructFromObject(data['e3']);
+          obj['e3'] = _NowOnAir["default"].constructFromObject(data['e3']);
         }
 
         if (data.hasOwnProperty('e4')) {
-          obj['e4'] = _Program["default"].constructFromObject(data['e4']);
+          obj['e4'] = _NowOnAir["default"].constructFromObject(data['e4']);
         }
 
         if (data.hasOwnProperty('s1')) {
-          obj['s1'] = _Program["default"].constructFromObject(data['s1']);
+          obj['s1'] = _NowOnAir["default"].constructFromObject(data['s1']);
         }
 
         if (data.hasOwnProperty('s2')) {
-          obj['s2'] = _Program["default"].constructFromObject(data['s2']);
+          obj['s2'] = _NowOnAir["default"].constructFromObject(data['s2']);
         }
 
         if (data.hasOwnProperty('s3')) {
-          obj['s3'] = _Program["default"].constructFromObject(data['s3']);
+          obj['s3'] = _NowOnAir["default"].constructFromObject(data['s3']);
         }
 
         if (data.hasOwnProperty('s4')) {
-          obj['s4'] = _Program["default"].constructFromObject(data['s4']);
+          obj['s4'] = _NowOnAir["default"].constructFromObject(data['s4']);
         }
 
         if (data.hasOwnProperty('r1')) {
-          obj['r1'] = _Program["default"].constructFromObject(data['r1']);
+          obj['r1'] = _NowOnAir["default"].constructFromObject(data['r1']);
         }
 
         if (data.hasOwnProperty('r2')) {
-          obj['r2'] = _Program["default"].constructFromObject(data['r2']);
+          obj['r2'] = _NowOnAir["default"].constructFromObject(data['r2']);
         }
 
         if (data.hasOwnProperty('r3')) {
-          obj['r3'] = _Program["default"].constructFromObject(data['r3']);
+          obj['r3'] = _NowOnAir["default"].constructFromObject(data['r3']);
         }
 
         if (data.hasOwnProperty('n1')) {
-          obj['n1'] = _Program["default"].constructFromObject(data['n1']);
+          obj['n1'] = _NowOnAir["default"].constructFromObject(data['n1']);
         }
 
         if (data.hasOwnProperty('n2')) {
-          obj['n2'] = _Program["default"].constructFromObject(data['n2']);
+          obj['n2'] = _NowOnAir["default"].constructFromObject(data['n2']);
         }
 
         if (data.hasOwnProperty('n3')) {
-          obj['n3'] = _Program["default"].constructFromObject(data['n3']);
+          obj['n3'] = _NowOnAir["default"].constructFromObject(data['n3']);
         }
 
         if (data.hasOwnProperty('tv')) {
-          obj['tv'] = _Program["default"].constructFromObject(data['tv']);
+          obj['tv'] = _NowOnAir["default"].constructFromObject(data['tv']);
         }
 
         if (data.hasOwnProperty('radio')) {
-          obj['radio'] = _Program["default"].constructFromObject(data['radio']);
+          obj['radio'] = _NowOnAir["default"].constructFromObject(data['radio']);
         }
 
         if (data.hasOwnProperty('netradio')) {
-          obj['netradio'] = _Program["default"].constructFromObject(data['netradio']);
+          obj['netradio'] = _NowOnAir["default"].constructFromObject(data['netradio']);
         }
       }
 
@@ -148,92 +146,92 @@ var NowOnAirListNowonairList = /*#__PURE__*/function () {
 
 NowOnAirListNowonairList.prototype['g1'] = undefined;
 /**
- * @member {module:model/Program} g2
+ * @member {module:model/NowOnAir} g2
  */
 
 NowOnAirListNowonairList.prototype['g2'] = undefined;
 /**
- * @member {module:model/Program} e1
+ * @member {module:model/NowOnAir} e1
  */
 
 NowOnAirListNowonairList.prototype['e1'] = undefined;
 /**
- * @member {module:model/Program} e2
+ * @member {module:model/NowOnAir} e2
  */
 
 NowOnAirListNowonairList.prototype['e2'] = undefined;
 /**
- * @member {module:model/Program} e3
+ * @member {module:model/NowOnAir} e3
  */
 
 NowOnAirListNowonairList.prototype['e3'] = undefined;
 /**
- * @member {module:model/Program} e4
+ * @member {module:model/NowOnAir} e4
  */
 
 NowOnAirListNowonairList.prototype['e4'] = undefined;
 /**
- * @member {module:model/Program} s1
+ * @member {module:model/NowOnAir} s1
  */
 
 NowOnAirListNowonairList.prototype['s1'] = undefined;
 /**
- * @member {module:model/Program} s2
+ * @member {module:model/NowOnAir} s2
  */
 
 NowOnAirListNowonairList.prototype['s2'] = undefined;
 /**
- * @member {module:model/Program} s3
+ * @member {module:model/NowOnAir} s3
  */
 
 NowOnAirListNowonairList.prototype['s3'] = undefined;
 /**
- * @member {module:model/Program} s4
+ * @member {module:model/NowOnAir} s4
  */
 
 NowOnAirListNowonairList.prototype['s4'] = undefined;
 /**
- * @member {module:model/Program} r1
+ * @member {module:model/NowOnAir} r1
  */
 
 NowOnAirListNowonairList.prototype['r1'] = undefined;
 /**
- * @member {module:model/Program} r2
+ * @member {module:model/NowOnAir} r2
  */
 
 NowOnAirListNowonairList.prototype['r2'] = undefined;
 /**
- * @member {module:model/Program} r3
+ * @member {module:model/NowOnAir} r3
  */
 
 NowOnAirListNowonairList.prototype['r3'] = undefined;
 /**
- * @member {module:model/Program} n1
+ * @member {module:model/NowOnAir} n1
  */
 
 NowOnAirListNowonairList.prototype['n1'] = undefined;
 /**
- * @member {module:model/Program} n2
+ * @member {module:model/NowOnAir} n2
  */
 
 NowOnAirListNowonairList.prototype['n2'] = undefined;
 /**
- * @member {module:model/Program} n3
+ * @member {module:model/NowOnAir} n3
  */
 
 NowOnAirListNowonairList.prototype['n3'] = undefined;
 /**
- * @member {module:model/Program} tv
+ * @member {module:model/NowOnAir} tv
  */
 
 NowOnAirListNowonairList.prototype['tv'] = undefined;
 /**
- * @member {module:model/Program} radio
+ * @member {module:model/NowOnAir} radio
  */
 
 NowOnAirListNowonairList.prototype['radio'] = undefined;
 /**
- * @member {module:model/Program} netradio
+ * @member {module:model/NowOnAir} netradio
  */
 
 NowOnAirListNowonairList.prototype['netradio'] = undefined;
