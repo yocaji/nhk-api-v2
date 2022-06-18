@@ -1,6 +1,6 @@
 /**
  * NHK API v2
- * JavaScript client for NHK Program Guide API.
+ * A JavaScript client for NHK Program Guide API.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -15,21 +15,21 @@ import ApiClient from '../ApiClient';
 import Program from './Program';
 
 /**
- * The GetProgramsNowOnAir200ResponseNowonairListG1 model module.
- * @module model/GetProgramsNowOnAir200ResponseNowonairListG1
+ * The NowOnAir model module.
+ * @module model/NowOnAir
  * @version 1.0.0
  */
-class GetProgramsNowOnAir200ResponseNowonairListG1 {
+class NowOnAir {
     /**
-     * Constructs a new <code>GetProgramsNowOnAir200ResponseNowonairListG1</code>.
-     * @alias module:model/GetProgramsNowOnAir200ResponseNowonairListG1
+     * Constructs a new <code>NowOnAir</code>.
+     * @alias module:model/NowOnAir
      * @param previous {module:model/Program} 
      * @param present {module:model/Program} 
      * @param following {module:model/Program} 
      */
     constructor(previous, present, following) { 
         
-        GetProgramsNowOnAir200ResponseNowonairListG1.initialize(this, previous, present, following);
+        NowOnAir.initialize(this, previous, present, following);
     }
 
     /**
@@ -44,15 +44,15 @@ class GetProgramsNowOnAir200ResponseNowonairListG1 {
     }
 
     /**
-     * Constructs a <code>GetProgramsNowOnAir200ResponseNowonairListG1</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>NowOnAir</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetProgramsNowOnAir200ResponseNowonairListG1} obj Optional instance to populate.
-     * @return {module:model/GetProgramsNowOnAir200ResponseNowonairListG1} The populated <code>GetProgramsNowOnAir200ResponseNowonairListG1</code> instance.
+     * @param {module:model/NowOnAir} obj Optional instance to populate.
+     * @return {module:model/NowOnAir} The populated <code>NowOnAir</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new GetProgramsNowOnAir200ResponseNowonairListG1();
+            obj = obj || new NowOnAir();
 
             if (data.hasOwnProperty('previous')) {
                 obj['previous'] = Program.constructFromObject(data['previous']);
@@ -73,22 +73,22 @@ class GetProgramsNowOnAir200ResponseNowonairListG1 {
 /**
  * @member {module:model/Program} previous
  */
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['previous'] = undefined;
+NowOnAir.prototype['previous'] = undefined;
 
 /**
  * @member {module:model/Program} present
  */
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['present'] = undefined;
+NowOnAir.prototype['present'] = undefined;
 
 /**
  * @member {module:model/Program} following
  */
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['following'] = undefined;
+NowOnAir.prototype['following'] = undefined;
 
 
 
 
 
 
-export default GetProgramsNowOnAir200ResponseNowonairListG1;
+export default NowOnAir;
 

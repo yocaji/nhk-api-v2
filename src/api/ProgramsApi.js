@@ -1,6 +1,6 @@
 /**
  * NHK API v2
- * JavaScript client for NHK Program Guide API.
+ * A JavaScript client for NHK Program Guide API.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -15,7 +15,7 @@
 import ApiClient from "../ApiClient";
 import DescriptionList from '../model/DescriptionList';
 import Error from '../model/Error';
-import GetProgramsNowOnAir200Response from '../model/GetProgramsNowOnAir200Response';
+import NowOnAirList from '../model/NowOnAirList';
 
 /**
 * Programs service.
@@ -101,19 +101,19 @@ export default class ProgramsApi {
      * @param {String} date Date in YYYY-MM-DD format
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array} and HTTP response
      */
-    getProgramsByChannelWithHttpInfo(area, service, date) {
+    getProgramsWithHttpInfo(area, service, date) {
       let postBody = null;
       // verify the required parameter 'area' is set
       if (area === undefined || area === null) {
-        throw new Error("Missing the required parameter 'area' when calling getProgramsByChannel");
+        throw new Error("Missing the required parameter 'area' when calling getPrograms");
       }
       // verify the required parameter 'service' is set
       if (service === undefined || service === null) {
-        throw new Error("Missing the required parameter 'service' when calling getProgramsByChannel");
+        throw new Error("Missing the required parameter 'service' when calling getPrograms");
       }
       // verify the required parameter 'date' is set
       if (date === undefined || date === null) {
-        throw new Error("Missing the required parameter 'date' when calling getProgramsByChannel");
+        throw new Error("Missing the required parameter 'date' when calling getPrograms");
       }
 
       let pathParams = {
@@ -145,8 +145,8 @@ export default class ProgramsApi {
      * @param {String} date Date in YYYY-MM-DD format
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array}
      */
-    getProgramsByChannel(area, service, date) {
-      return this.getProgramsByChannelWithHttpInfo(area, service, date)
+    getPrograms(area, service, date) {
+      return this.getProgramsWithHttpInfo(area, service, date)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -221,7 +221,7 @@ export default class ProgramsApi {
     /**
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetProgramsNowOnAir200Response} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NowOnAirList} and HTTP response
      */
     getProgramsNowOnAirWithHttpInfo(area, service) {
       let postBody = null;
@@ -248,7 +248,7 @@ export default class ProgramsApi {
       let authNames = ['api_key'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = GetProgramsNowOnAir200Response;
+      let returnType = NowOnAirList;
       return this.apiClient.callApi(
         '/now/{area}/{service}.json', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -259,7 +259,7 @@ export default class ProgramsApi {
     /**
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetProgramsNowOnAir200Response}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NowOnAirList}
      */
     getProgramsNowOnAir(area, service) {
       return this.getProgramsNowOnAirWithHttpInfo(area, service)

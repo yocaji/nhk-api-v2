@@ -1,4 +1,4 @@
-# NhkApiV2.GetProgramsNowOnAir200ResponseNowonairListG1
+# NhkApiV2.NowOnAir
 
 ## Properties
 

@@ -31,7 +31,7 @@ const date = '2022-06-24' // {String} Date in YYYY-MM-DD format
 const genre = '0000' // {String} Genre code defined by ARIB STD-B10
 const id = '2022062532788' // {String} ID of channel
 
-api.getProgramsByChannel(area, service, date).then(function (data) {
+api.getPrograms(area, service, date).then(function (data) {
   console.log('API called successfully. Returned data: ' + data)
 }, function (error) {
   console.error(error)
@@ -58,12 +58,12 @@ api.getProgramsNowOnAir(area, service).then(function (data) {
 
 All URIs are relative to *https://api.nhk.or.jp/v2/pg*
 
-Class | Method | HTTP request
------------- | ------------- | -------------
-*NhkApiV2.ProgramsApi* | [**getProgramInfo**](docs/ProgramsApi.md#getProgramInfo) | **GET** /info/{area}/{service}/{id}.json
-*NhkApiV2.ProgramsApi* | [**getProgramsByChannel**](docs/ProgramsApi.md#getProgramsByChannel) | **GET** /list/{area}/{service}/{date}.json
-*NhkApiV2.ProgramsApi* | [**getProgramsByGenre**](docs/ProgramsApi.md#getProgramsByGenre) | **GET** /genre/{area}/{service}/{genre}/{date}.json
-*NhkApiV2.ProgramsApi* | [**getProgramsNowOnAir**](docs/ProgramsApi.md#getProgramsNowOnAir) | **GET** /now/{area}/{service}.json
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*NhkApiV2.ProgramsApi* | [**getProgramInfo**](docs/ProgramsApi.md#getProgramInfo) | **GET** /info/{area}/{service}/{id}.json | 
+*NhkApiV2.ProgramsApi* | [**getPrograms**](docs/ProgramsApi.md#getPrograms) | **GET** /list/{area}/{service}/{date}.json | 
+*NhkApiV2.ProgramsApi* | [**getProgramsByGenre**](docs/ProgramsApi.md#getProgramsByGenre) | **GET** /genre/{area}/{service}/{genre}/{date}.json | 
+*NhkApiV2.ProgramsApi* | [**getProgramsNowOnAir**](docs/ProgramsApi.md#getProgramsNowOnAir) | **GET** /now/{area}/{service}.json | 
 
 
 ## Documentation for Models
@@ -75,13 +75,13 @@ Class | Method | HTTP request
  - [NhkApiV2.Error](docs/Error.md)
  - [NhkApiV2.ErrorError](docs/ErrorError.md)
  - [NhkApiV2.Extra](docs/Extra.md)
- - [NhkApiV2.GetProgramsNowOnAir200Response](docs/GetProgramsNowOnAir200Response.md)
- - [NhkApiV2.GetProgramsNowOnAir200ResponseNowonairList](docs/GetProgramsNowOnAir200ResponseNowonairList.md)
- - [NhkApiV2.GetProgramsNowOnAir200ResponseNowonairListG1](docs/GetProgramsNowOnAir200ResponseNowonairListG1.md)
  - [NhkApiV2.Link](docs/Link.md)
  - [NhkApiV2.List](docs/List.md)
  - [NhkApiV2.ListList](docs/ListList.md)
  - [NhkApiV2.Logo](docs/Logo.md)
+ - [NhkApiV2.NowOnAir](docs/NowOnAir.md)
+ - [NhkApiV2.NowOnAirList](docs/NowOnAirList.md)
+ - [NhkApiV2.NowOnAirListNowonairList](docs/NowOnAirListNowonairList.md)
  - [NhkApiV2.Program](docs/Program.md)
  - [NhkApiV2.Service](docs/Service.md)
 

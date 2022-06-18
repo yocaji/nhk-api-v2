@@ -1,6 +1,6 @@
 /**
  * NHK API v2
- * JavaScript client for NHK Program Guide API.
+ * A JavaScript client for NHK Program Guide API.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -20,20 +20,20 @@ import DescriptionListList from './model/DescriptionListList';
 import Error from './model/Error';
 import ErrorError from './model/ErrorError';
 import Extra from './model/Extra';
-import GetProgramsNowOnAir200Response from './model/GetProgramsNowOnAir200Response';
-import GetProgramsNowOnAir200ResponseNowonairList from './model/GetProgramsNowOnAir200ResponseNowonairList';
-import GetProgramsNowOnAir200ResponseNowonairListG1 from './model/GetProgramsNowOnAir200ResponseNowonairListG1';
 import Link from './model/Link';
 import List from './model/List';
 import ListList from './model/ListList';
 import Logo from './model/Logo';
+import NowOnAir from './model/NowOnAir';
+import NowOnAirList from './model/NowOnAirList';
+import NowOnAirListNowonairList from './model/NowOnAirListNowonairList';
 import Program from './model/Program';
 import Service from './model/Service';
 import ProgramsApi from './api/ProgramsApi';
 
 
 /**
-* JavaScript_client_for_NHK_Program_Guide_API_.<br>
+* A_JavaScript_client_for_NHK_Program_Guide_API_.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -113,24 +113,6 @@ export {
     Extra,
 
     /**
-     * The GetProgramsNowOnAir200Response model constructor.
-     * @property {module:model/GetProgramsNowOnAir200Response}
-     */
-    GetProgramsNowOnAir200Response,
-
-    /**
-     * The GetProgramsNowOnAir200ResponseNowonairList model constructor.
-     * @property {module:model/GetProgramsNowOnAir200ResponseNowonairList}
-     */
-    GetProgramsNowOnAir200ResponseNowonairList,
-
-    /**
-     * The GetProgramsNowOnAir200ResponseNowonairListG1 model constructor.
-     * @property {module:model/GetProgramsNowOnAir200ResponseNowonairListG1}
-     */
-    GetProgramsNowOnAir200ResponseNowonairListG1,
-
-    /**
      * The Link model constructor.
      * @property {module:model/Link}
      */
@@ -153,6 +135,24 @@ export {
      * @property {module:model/Logo}
      */
     Logo,
+
+    /**
+     * The NowOnAir model constructor.
+     * @property {module:model/NowOnAir}
+     */
+    NowOnAir,
+
+    /**
+     * The NowOnAirList model constructor.
+     * @property {module:model/NowOnAirList}
+     */
+    NowOnAirList,
+
+    /**
+     * The NowOnAirListNowonairList model constructor.
+     * @property {module:model/NowOnAirListNowonairList}
+     */
+    NowOnAirListNowonairList,
 
     /**
      * The Program model constructor.

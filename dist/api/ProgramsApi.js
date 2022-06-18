@@ -11,7 +11,7 @@ var _DescriptionList = _interopRequireDefault(require("../model/DescriptionList"
 
 var _Error = _interopRequireDefault(require("../model/Error"));
 
-var _GetProgramsNowOnAir200Response = _interopRequireDefault(require("../model/GetProgramsNowOnAir200Response"));
+var _NowOnAirList = _interopRequireDefault(require("../model/NowOnAirList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -102,22 +102,22 @@ var ProgramsApi = /*#__PURE__*/function () {
      */
 
   }, {
-    key: "getProgramsByChannelWithHttpInfo",
-    value: function getProgramsByChannelWithHttpInfo(area, service, date) {
+    key: "getProgramsWithHttpInfo",
+    value: function getProgramsWithHttpInfo(area, service, date) {
       var postBody = null; // verify the required parameter 'area' is set
 
       if (area === undefined || area === null) {
-        throw new _Error["default"]("Missing the required parameter 'area' when calling getProgramsByChannel");
+        throw new _Error["default"]("Missing the required parameter 'area' when calling getPrograms");
       } // verify the required parameter 'service' is set
 
 
       if (service === undefined || service === null) {
-        throw new _Error["default"]("Missing the required parameter 'service' when calling getProgramsByChannel");
+        throw new _Error["default"]("Missing the required parameter 'service' when calling getPrograms");
       } // verify the required parameter 'date' is set
 
 
       if (date === undefined || date === null) {
-        throw new _Error["default"]("Missing the required parameter 'date' when calling getProgramsByChannel");
+        throw new _Error["default"]("Missing the required parameter 'date' when calling getPrograms");
       }
 
       var pathParams = {
@@ -142,9 +142,9 @@ var ProgramsApi = /*#__PURE__*/function () {
      */
 
   }, {
-    key: "getProgramsByChannel",
-    value: function getProgramsByChannel(area, service, date) {
-      return this.getProgramsByChannelWithHttpInfo(area, service, date).then(function (response_and_data) {
+    key: "getPrograms",
+    value: function getPrograms(area, service, date) {
+      return this.getProgramsWithHttpInfo(area, service, date).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -213,7 +213,7 @@ var ProgramsApi = /*#__PURE__*/function () {
     /**
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetProgramsNowOnAir200Response} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NowOnAirList} and HTTP response
      */
 
   }, {
@@ -240,13 +240,13 @@ var ProgramsApi = /*#__PURE__*/function () {
       var authNames = ['api_key'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetProgramsNowOnAir200Response["default"];
+      var returnType = _NowOnAirList["default"];
       return this.apiClient.callApi('/now/{area}/{service}.json', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetProgramsNowOnAir200Response}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NowOnAirList}
      */
 
   }, {

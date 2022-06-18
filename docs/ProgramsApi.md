@@ -5,7 +5,7 @@ All URIs are relative to *https://api.nhk.or.jp/v2/pg*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getProgramInfo**](ProgramsApi.md#getProgramInfo) | **GET** /info/{area}/{service}/{id}.json | 
-[**getProgramsByChannel**](ProgramsApi.md#getProgramsByChannel) | **GET** /list/{area}/{service}/{date}.json | 
+[**getPrograms**](ProgramsApi.md#getPrograms) | **GET** /list/{area}/{service}/{date}.json | 
 [**getProgramsByGenre**](ProgramsApi.md#getProgramsByGenre) | **GET** /genre/{area}/{service}/{genre}/{date}.json | 
 [**getProgramsNowOnAir**](ProgramsApi.md#getProgramsNowOnAir) | **GET** /now/{area}/{service}.json | 
 
@@ -63,9 +63,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## getProgramsByChannel
+## getPrograms
 
-> Array getProgramsByChannel(area, service, date)
+> Array getPrograms(area, service, date)
 
 
 
@@ -84,7 +84,7 @@ let apiInstance = new NhkApiV2.ProgramsApi();
 let area = "area_example"; // String | ID of broadcast area
 let service = "service_example"; // String | ID of channel or channel group
 let date = "date_example"; // String | Date in YYYY-MM-DD format
-apiInstance.getProgramsByChannel(area, service, date).then((data) => {
+apiInstance.getPrograms(area, service, date).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ## getProgramsNowOnAir
 
-> GetProgramsNowOnAir200Response getProgramsNowOnAir(area, service)
+> NowOnAirList getProgramsNowOnAir(area, service)
 
 
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetProgramsNowOnAir200Response**](GetProgramsNowOnAir200Response.md)
+[**NowOnAirList**](NowOnAirList.md)
 
 ### Authorization
 

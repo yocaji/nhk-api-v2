@@ -18,22 +18,22 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
- * The GetProgramsNowOnAir200ResponseNowonairListG1 model module.
- * @module model/GetProgramsNowOnAir200ResponseNowonairListG1
+ * The NowOnAir model module.
+ * @module model/NowOnAir
  * @version 1.0.0
  */
-var GetProgramsNowOnAir200ResponseNowonairListG1 = /*#__PURE__*/function () {
+var NowOnAir = /*#__PURE__*/function () {
   /**
-   * Constructs a new <code>GetProgramsNowOnAir200ResponseNowonairListG1</code>.
-   * @alias module:model/GetProgramsNowOnAir200ResponseNowonairListG1
+   * Constructs a new <code>NowOnAir</code>.
+   * @alias module:model/NowOnAir
    * @param previous {module:model/Program} 
    * @param present {module:model/Program} 
    * @param following {module:model/Program} 
    */
-  function GetProgramsNowOnAir200ResponseNowonairListG1(previous, present, following) {
-    _classCallCheck(this, GetProgramsNowOnAir200ResponseNowonairListG1);
+  function NowOnAir(previous, present, following) {
+    _classCallCheck(this, NowOnAir);
 
-    GetProgramsNowOnAir200ResponseNowonairListG1.initialize(this, previous, present, following);
+    NowOnAir.initialize(this, previous, present, following);
   }
   /**
    * Initializes the fields of this object.
@@ -42,7 +42,7 @@ var GetProgramsNowOnAir200ResponseNowonairListG1 = /*#__PURE__*/function () {
    */
 
 
-  _createClass(GetProgramsNowOnAir200ResponseNowonairListG1, null, [{
+  _createClass(NowOnAir, null, [{
     key: "initialize",
     value: function initialize(obj, previous, present, following) {
       obj['previous'] = previous;
@@ -50,18 +50,18 @@ var GetProgramsNowOnAir200ResponseNowonairListG1 = /*#__PURE__*/function () {
       obj['following'] = following;
     }
     /**
-     * Constructs a <code>GetProgramsNowOnAir200ResponseNowonairListG1</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>NowOnAir</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetProgramsNowOnAir200ResponseNowonairListG1} obj Optional instance to populate.
-     * @return {module:model/GetProgramsNowOnAir200ResponseNowonairListG1} The populated <code>GetProgramsNowOnAir200ResponseNowonairListG1</code> instance.
+     * @param {module:model/NowOnAir} obj Optional instance to populate.
+     * @return {module:model/NowOnAir} The populated <code>NowOnAir</code> instance.
      */
 
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
-        obj = obj || new GetProgramsNowOnAir200ResponseNowonairListG1();
+        obj = obj || new NowOnAir();
 
         if (data.hasOwnProperty('previous')) {
           obj['previous'] = _Program["default"].constructFromObject(data['previous']);
@@ -80,23 +80,23 @@ var GetProgramsNowOnAir200ResponseNowonairListG1 = /*#__PURE__*/function () {
     }
   }]);
 
-  return GetProgramsNowOnAir200ResponseNowonairListG1;
+  return NowOnAir;
 }();
 /**
  * @member {module:model/Program} previous
  */
 
 
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['previous'] = undefined;
+NowOnAir.prototype['previous'] = undefined;
 /**
  * @member {module:model/Program} present
  */
 
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['present'] = undefined;
+NowOnAir.prototype['present'] = undefined;
 /**
  * @member {module:model/Program} following
  */
 
-GetProgramsNowOnAir200ResponseNowonairListG1.prototype['following'] = undefined;
-var _default = GetProgramsNowOnAir200ResponseNowonairListG1;
+NowOnAir.prototype['following'] = undefined;
+var _default = NowOnAir;
 exports["default"] = _default;

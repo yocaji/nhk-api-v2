@@ -1,7 +1,7 @@
 {
   "name": "nhk-api-v2",
   "version": "1.0.0",
-  "description": "JavaScript client for NHK Program Guide API.",
+  "description": "A_JavaScript_client_for_NHK_Program_Guide_API_",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {

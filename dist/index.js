@@ -51,24 +51,6 @@ Object.defineProperty(exports, "Extra", {
     return _Extra["default"];
   }
 });
-Object.defineProperty(exports, "GetProgramsNowOnAir200Response", {
-  enumerable: true,
-  get: function get() {
-    return _GetProgramsNowOnAir200Response["default"];
-  }
-});
-Object.defineProperty(exports, "GetProgramsNowOnAir200ResponseNowonairList", {
-  enumerable: true,
-  get: function get() {
-    return _GetProgramsNowOnAir200ResponseNowonairList["default"];
-  }
-});
-Object.defineProperty(exports, "GetProgramsNowOnAir200ResponseNowonairListG1", {
-  enumerable: true,
-  get: function get() {
-    return _GetProgramsNowOnAir200ResponseNowonairListG["default"];
-  }
-});
 Object.defineProperty(exports, "Link", {
   enumerable: true,
   get: function get() {
@@ -91,6 +73,24 @@ Object.defineProperty(exports, "Logo", {
   enumerable: true,
   get: function get() {
     return _Logo["default"];
+  }
+});
+Object.defineProperty(exports, "NowOnAir", {
+  enumerable: true,
+  get: function get() {
+    return _NowOnAir["default"];
+  }
+});
+Object.defineProperty(exports, "NowOnAirList", {
+  enumerable: true,
+  get: function get() {
+    return _NowOnAirList["default"];
+  }
+});
+Object.defineProperty(exports, "NowOnAirListNowonairList", {
+  enumerable: true,
+  get: function get() {
+    return _NowOnAirListNowonairList["default"];
   }
 });
 Object.defineProperty(exports, "Program", {
@@ -128,12 +128,6 @@ var _ErrorError = _interopRequireDefault(require("./model/ErrorError"));
 
 var _Extra = _interopRequireDefault(require("./model/Extra"));
 
-var _GetProgramsNowOnAir200Response = _interopRequireDefault(require("./model/GetProgramsNowOnAir200Response"));
-
-var _GetProgramsNowOnAir200ResponseNowonairList = _interopRequireDefault(require("./model/GetProgramsNowOnAir200ResponseNowonairList"));
-
-var _GetProgramsNowOnAir200ResponseNowonairListG = _interopRequireDefault(require("./model/GetProgramsNowOnAir200ResponseNowonairListG1"));
-
 var _Link = _interopRequireDefault(require("./model/Link"));
 
 var _List = _interopRequireDefault(require("./model/List"));
@@ -141,6 +135,12 @@ var _List = _interopRequireDefault(require("./model/List"));
 var _ListList = _interopRequireDefault(require("./model/ListList"));
 
 var _Logo = _interopRequireDefault(require("./model/Logo"));
+
+var _NowOnAir = _interopRequireDefault(require("./model/NowOnAir"));
+
+var _NowOnAirList = _interopRequireDefault(require("./model/NowOnAirList"));
+
+var _NowOnAirListNowonairList = _interopRequireDefault(require("./model/NowOnAirListNowonairList"));
 
 var _Program = _interopRequireDefault(require("./model/Program"));
 

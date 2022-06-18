@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetProgramsNowOnAir200ResponseNowonairList = _interopRequireDefault(require("./GetProgramsNowOnAir200ResponseNowonairList"));
+var _NowOnAirListNowonairList = _interopRequireDefault(require("./NowOnAirListNowonairList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -18,20 +18,20 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
- * The GetProgramsNowOnAir200Response model module.
- * @module model/GetProgramsNowOnAir200Response
+ * The NowOnAirList model module.
+ * @module model/NowOnAirList
  * @version 1.0.0
  */
-var GetProgramsNowOnAir200Response = /*#__PURE__*/function () {
+var NowOnAirList = /*#__PURE__*/function () {
   /**
-   * Constructs a new <code>GetProgramsNowOnAir200Response</code>.
-   * @alias module:model/GetProgramsNowOnAir200Response
-   * @param nowonairList {module:model/GetProgramsNowOnAir200ResponseNowonairList} 
+   * Constructs a new <code>NowOnAirList</code>.
+   * @alias module:model/NowOnAirList
+   * @param nowonairList {module:model/NowOnAirListNowonairList} 
    */
-  function GetProgramsNowOnAir200Response(nowonairList) {
-    _classCallCheck(this, GetProgramsNowOnAir200Response);
+  function NowOnAirList(nowonairList) {
+    _classCallCheck(this, NowOnAirList);
 
-    GetProgramsNowOnAir200Response.initialize(this, nowonairList);
+    NowOnAirList.initialize(this, nowonairList);
   }
   /**
    * Initializes the fields of this object.
@@ -40,27 +40,27 @@ var GetProgramsNowOnAir200Response = /*#__PURE__*/function () {
    */
 
 
-  _createClass(GetProgramsNowOnAir200Response, null, [{
+  _createClass(NowOnAirList, null, [{
     key: "initialize",
     value: function initialize(obj, nowonairList) {
       obj['nowonair_list'] = nowonairList;
     }
     /**
-     * Constructs a <code>GetProgramsNowOnAir200Response</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>NowOnAirList</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetProgramsNowOnAir200Response} obj Optional instance to populate.
-     * @return {module:model/GetProgramsNowOnAir200Response} The populated <code>GetProgramsNowOnAir200Response</code> instance.
+     * @param {module:model/NowOnAirList} obj Optional instance to populate.
+     * @return {module:model/NowOnAirList} The populated <code>NowOnAirList</code> instance.
      */
 
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
-        obj = obj || new GetProgramsNowOnAir200Response();
+        obj = obj || new NowOnAirList();
 
         if (data.hasOwnProperty('nowonair_list')) {
-          obj['nowonair_list'] = _GetProgramsNowOnAir200ResponseNowonairList["default"].constructFromObject(data['nowonair_list']);
+          obj['nowonair_list'] = _NowOnAirListNowonairList["default"].constructFromObject(data['nowonair_list']);
         }
       }
 
@@ -68,13 +68,13 @@ var GetProgramsNowOnAir200Response = /*#__PURE__*/function () {
     }
   }]);
 
-  return GetProgramsNowOnAir200Response;
+  return NowOnAirList;
 }();
 /**
- * @member {module:model/GetProgramsNowOnAir200ResponseNowonairList} nowonair_list
+ * @member {module:model/NowOnAirListNowonairList} nowonair_list
  */
 
 
-GetProgramsNowOnAir200Response.prototype['nowonair_list'] = undefined;
-var _default = GetProgramsNowOnAir200Response;
+NowOnAirList.prototype['nowonair_list'] = undefined;
+var _default = NowOnAirList;
 exports["default"] = _default;

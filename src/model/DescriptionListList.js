@@ -1,6 +1,6 @@
 /**
  * NHK API v2
- * JavaScript client for NHK Program Guide API.
+ * A JavaScript client for NHK Program Guide API.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
