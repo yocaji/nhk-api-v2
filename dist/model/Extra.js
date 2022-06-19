@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Extra model module.
  * @module model/Extra
- * @version 1.1.1
+ * @version 1.1.2
  */
 var Extra = /*#__PURE__*/function () {
   /**

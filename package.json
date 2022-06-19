@@ -1,8 +1,16 @@
 {
   "name": "nhk-api-v2",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A_JavaScript_client_for_NHK_Program_Guide_API_",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocajii/nhk-api-v2"
+  },
+  "keywords": [
+    "nhk",
+    "nhk api"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",

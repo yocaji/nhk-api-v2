@@ -20,7 +20,7 @@ import NowOnAirList from '../model/NowOnAirList';
 /**
 * Programs service.
 * @module api/ProgramsApi
-* @version 1.1.1
+* @version 1.1.2
 */
 export default class ProgramsApi {
 
