@@ -17,7 +17,7 @@ import ErrorError from './ErrorError';
 /**
  * The Error model module.
  * @module model/Error
- * @version 1.1.0
+ * @version 1.1.1
  */
 class Error {
     /**
