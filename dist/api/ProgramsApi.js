@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Programs service.
 * @module api/ProgramsApi
-* @version 1.1.2
+* @version 1.1.3
 */
 var ProgramsApi = /*#__PURE__*/function () {
   /**
@@ -40,6 +40,8 @@ var ProgramsApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
+   * 番組情報を取得します
+   * 番組情報を取得します。地域、チャンネル、対象の番組IDを指定する必要があります。
    * @param {String} area ID of broadcast area
    * @param {String} service ID of channel or channel group
    * @param {String} id ID of program
@@ -81,6 +83,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/info/{area}/{service}/{id}.json', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
+     * 番組情報を取得します
+     * 番組情報を取得します。地域、チャンネル、対象の番組IDを指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @param {String} id ID of program
@@ -95,6 +99,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * 番組リストを取得します
+     * 番組リストを取得します。地域、チャンネル、日付を指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @param {String} date Date in YYYY-MM-DD format
@@ -135,6 +141,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/list/{area}/{service}/{date}.json', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
+     * 番組リストを取得します
+     * 番組リストを取得します。地域、チャンネル、日付を指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @param {String} date Date in YYYY-MM-DD format
@@ -149,6 +157,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * 指定されたジャンルの番組リストを取得します
+     * 番組リストを取得します。地域、チャンネル、日付、ジャンルを指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @param {String} date Date in YYYY-MM-DD format
@@ -196,6 +206,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/genre/{area}/{service}/{genre}/{date}.json', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
+     * 指定されたジャンルの番組リストを取得します
+     * 番組リストを取得します。地域、チャンネル、日付、ジャンルを指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @param {String} date Date in YYYY-MM-DD format
@@ -211,6 +223,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * 放送中の番組リストを取得します
+     * 放送中の番組リストを取得します。地域、チャンネルを指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NowOnAirList} and HTTP response
@@ -244,6 +258,8 @@ var ProgramsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/now/{area}/{service}.json', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
+     * 放送中の番組リストを取得します
+     * 放送中の番組リストを取得します。地域、チャンネルを指定する必要があります。
      * @param {String} area ID of broadcast area
      * @param {String} service ID of channel or channel group
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NowOnAirList}

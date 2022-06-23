@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Program model module.
  * @module model/Program
- * @version 1.1.2
+ * @version 1.1.3
  */
 var Program = /*#__PURE__*/function () {
   /**

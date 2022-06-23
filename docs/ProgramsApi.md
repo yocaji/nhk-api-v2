@@ -4,10 +4,10 @@ All URIs are relative to *https://api.nhk.or.jp/v2/pg*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getProgramInfo**](ProgramsApi.md#getProgramInfo) | **GET** /info/{area}/{service}/{id}.json | 
-[**getPrograms**](ProgramsApi.md#getPrograms) | **GET** /list/{area}/{service}/{date}.json | 
-[**getProgramsByGenre**](ProgramsApi.md#getProgramsByGenre) | **GET** /genre/{area}/{service}/{genre}/{date}.json | 
-[**getProgramsNowOnAir**](ProgramsApi.md#getProgramsNowOnAir) | **GET** /now/{area}/{service}.json | 
+[**getProgramInfo**](ProgramsApi.md#getProgramInfo) | **GET** /info/{area}/{service}/{id}.json | 番組情報を取得します
+[**getPrograms**](ProgramsApi.md#getPrograms) | **GET** /list/{area}/{service}/{date}.json | 番組リストを取得します
+[**getProgramsByGenre**](ProgramsApi.md#getProgramsByGenre) | **GET** /genre/{area}/{service}/{genre}/{date}.json | 指定されたジャンルの番組リストを取得します
+[**getProgramsNowOnAir**](ProgramsApi.md#getProgramsNowOnAir) | **GET** /now/{area}/{service}.json | 放送中の番組リストを取得します
 
 
 
@@ -15,7 +15,9 @@ Method | HTTP request | Description
 
 > DescriptionList getProgramInfo(area, service, id)
 
+番組情報を取得します
 
+番組情報を取得します。地域、チャンネル、対象の番組IDを指定する必要があります。
 
 ### Example
 
@@ -67,7 +69,9 @@ Name | Type | Description  | Notes
 
 > Array getPrograms(area, service, date)
 
+番組リストを取得します
 
+番組リストを取得します。地域、チャンネル、日付を指定する必要があります。
 
 ### Example
 
@@ -119,7 +123,9 @@ Name | Type | Description  | Notes
 
 > Array getProgramsByGenre(area, service, date, genre)
 
+指定されたジャンルの番組リストを取得します
 
+番組リストを取得します。地域、チャンネル、日付、ジャンルを指定する必要があります。
 
 ### Example
 
@@ -173,7 +179,9 @@ Name | Type | Description  | Notes
 
 > NowOnAirList getProgramsNowOnAir(area, service)
 
+放送中の番組リストを取得します
 
+放送中の番組リストを取得します。地域、チャンネルを指定する必要があります。
 
 ### Example
 
