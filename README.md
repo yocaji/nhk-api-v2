@@ -25,7 +25,7 @@ npm i nhk-api-v2
     const area = '020' // 地域ID
     const service = 'tv' // サービスID
 
-    api.getProgramsNowOnAir(area, service).then(function (data) {
+    client.getProgramsNowOnAir(area, service).then(function (data) {
       console.log('青森で現在放送中のテレビ番組: ' + JSON.stringify(data))
     }, function (error) {
       console.error(error)
