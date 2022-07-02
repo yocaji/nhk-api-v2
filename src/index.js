@@ -11,7 +11,7 @@
  *
  */
 
-import Client from './Client';
+import Client from './Client'
 import ApiClient from './ApiClient';
 import Area from './model/Area';
 import Description from './model/Description';
@@ -61,7 +61,7 @@ import ProgramsApi from './api/ProgramsApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1.3
+* @version 1.1.4
 */
 export {
     Client,

@@ -17,7 +17,7 @@ import Program from './Program';
 /**
  * The ListList model module.
  * @module model/ListList
- * @version 1.1.3
+ * @version 1.1.4
  */
 class ListList {
     /**

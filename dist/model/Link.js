@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Link model module.
  * @module model/Link
- * @version 1.1.3
+ * @version 1.1.4
  */
 var Link = /*#__PURE__*/function () {
   /**

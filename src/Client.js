@@ -1,5 +1,5 @@
 import ApiClient from './ApiClient'
-import ProgramsApi from "./api/ProgramsApi";
+import ProgramsApi from './api/ProgramsApi'
 
 export default class Client {
   constructor(key) {
