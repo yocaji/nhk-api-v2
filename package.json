@@ -1,8 +1,16 @@
 {
   "name": "nhk-api-v2",
-  "version": "1.1.4",
-  "description": "JavaScriptNHKAPI",
+  "version": "1.1.6",
+  "description": "JavaScriptによるNHK番組表APIのクライアントです",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocajii/nhk-api-v2"
+  },
+  "keywords": [
+    "nhk",
+    "api"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",

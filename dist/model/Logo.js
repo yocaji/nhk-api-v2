@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Logo model module.
  * @module model/Logo
- * @version 1.1.4
+ * @version 1.1.6
  */
 var Logo = /*#__PURE__*/function () {
   /**

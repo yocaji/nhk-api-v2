@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Link model module.
  * @module model/Link
- * @version 1.1.4
+ * @version 1.1.6
  */
 class Link {
     /**

@@ -11,7 +11,7 @@
  *
  */
 
-import Client from './Client'
+
 import ApiClient from './ApiClient';
 import Area from './model/Area';
 import Description from './model/Description';
@@ -61,11 +61,9 @@ import ProgramsApi from './api/ProgramsApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1.4
+* @version 1.1.6
 */
 export {
-    Client,
-
     /**
      * The ApiClient constructor.
      * @property {module:ApiClient}

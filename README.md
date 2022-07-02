@@ -3,7 +3,7 @@
 [NHK番組表API](https://api-portal.nhk.or.jp/)のクライアントSDK(JavaScript)です
 
 - API version: 2.0.0
-- Package version: 1.1.5
+- Package version: 1.1.6
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 
 
@@ -21,7 +21,7 @@ npm i nhk-api-v2
     ```javascript
     const NhkApiV2 = require('nhk-api-v2')
 
-    const client = new NhkApiV2.Client()
+    const client = new NhkApiV2.Client('Your API Key')
     const area = '020' // 地域ID
     const service = 'tv' // サービスID
 
@@ -33,7 +33,7 @@ npm i nhk-api-v2
     ```
 3. [NHK番組表API](https://api-portal.nhk.or.jp/)で発行したAPI Keyを確認します
     ![image](https://user-images.githubusercontent.com/33394676/175258077-22333691-9b1b-43c3-95e5-b61c83d5bf22.png)
-4. `example.js`の5行目にある`Your API Key`をあなたのAPIキーに書き換えます
+4. `example.js`の3行目にある`Your API Key`をあなたのAPIキーに書き換えます
 5. `example.js`を実行します
 
 
