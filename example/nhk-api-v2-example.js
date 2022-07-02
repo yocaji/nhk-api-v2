@@ -6,9 +6,9 @@ const client = new NhkApiV2.Client(process.env.API_KEY)
 
 const area = '020' // {Number} ID of broadcast area
 const service = 'tv' // {String} ID of channel or channel group
-const date = '2022-06-24' // {String} Date in YYYY-MM-DD format
+const date = '2022-07-02' // {String} Date in YYYY-MM-DD format
 const genre = '0000' // {String} Genre code defined by ARIB STD-B10
-const id = '2022062532788' // {String} ID of channel
+const id = '2022070201946' // {String} ID of channel
 
 client.getPrograms(area, service, date).then(function (data) {
   console.log(`${date} にEテレ1で放送される21番目の番組のジャンルコード: ` + data.list.e1[20].genres)

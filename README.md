@@ -3,7 +3,7 @@
 [NHK番組表API](https://api-portal.nhk.or.jp/)のクライアントSDK(JavaScript)です
 
 - API version: 2.0.0
-- Package version: 1.1.4
+- Package version: 1.1.5
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 
 
