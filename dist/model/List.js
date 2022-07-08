@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The List model module.
  * @module model/List
- * @version 1.1.6
+ * @version 1.1.7
  */
 var List = /*#__PURE__*/function () {
   /**

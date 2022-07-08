@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Description model module.
  * @module model/Description
- * @version 1.1.6
+ * @version 1.1.7
  */
 var Description = /*#__PURE__*/function () {
   /**

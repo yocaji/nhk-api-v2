@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Service model module.
  * @module model/Service
- * @version 1.1.6
+ * @version 1.1.7
  */
 var Service = /*#__PURE__*/function () {
   /**

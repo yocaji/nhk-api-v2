@@ -17,7 +17,7 @@ import NowOnAir from './NowOnAir';
 /**
  * The NowOnAirListNowonairList model module.
  * @module model/NowOnAirListNowonairList
- * @version 1.1.6
+ * @version 1.1.7
  */
 class NowOnAirListNowonairList {
     /**
