@@ -17,7 +17,7 @@ import DescriptionListList from './DescriptionListList';
 /**
  * The DescriptionList model module.
  * @module model/DescriptionList
- * @version 1.1.7
+ * @version 1.1.8
  */
 class DescriptionList {
     /**

@@ -17,7 +17,7 @@ import Link from './Link';
 /**
  * The Extra model module.
  * @module model/Extra
- * @version 1.1.7
+ * @version 1.1.8
  */
 class Extra {
     /**
