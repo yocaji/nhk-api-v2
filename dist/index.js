@@ -15,6 +15,12 @@ Object.defineProperty(exports, "Area", {
     return _Area["default"];
   }
 });
+Object.defineProperty(exports, "Client", {
+  enumerable: true,
+  get: function get() {
+    return _Client["default"];
+  }
+});
 Object.defineProperty(exports, "Description", {
   enumerable: true,
   get: function get() {
@@ -111,6 +117,8 @@ Object.defineProperty(exports, "Service", {
     return _Service["default"];
   }
 });
+
+var _Client = _interopRequireDefault(require("./Client"));
 
 var _ApiClient = _interopRequireDefault(require("./ApiClient"));
 
