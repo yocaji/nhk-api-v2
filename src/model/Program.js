@@ -18,7 +18,7 @@ import Service from './Service';
 /**
  * The Program model module.
  * @module model/Program
- * @version 1.1.8
+ * @version 1.1.9
  */
 class Program {
     /**

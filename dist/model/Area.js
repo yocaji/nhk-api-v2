@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Area model module.
  * @module model/Area
- * @version 1.1.8
+ * @version 1.1.9
  */
 var Area = /*#__PURE__*/function () {
   /**

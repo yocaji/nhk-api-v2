@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Area model module.
  * @module model/Area
- * @version 1.1.8
+ * @version 1.1.9
  */
 class Area {
     /**

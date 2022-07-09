@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DescriptionList model module.
  * @module model/DescriptionList
- * @version 1.1.8
+ * @version 1.1.9
  */
 var DescriptionList = /*#__PURE__*/function () {
   /**
