@@ -49,6 +49,8 @@ export NHK_API_KEY="Your Api Key"
 npx -y nhk-api-v2 nhk-radio-now
 ```
 
+![movie](https://user-images.githubusercontent.com/33394676/178099357-f43818e5-0704-4817-9780-63fc4df9870e.gif)
+
 
 ## リクエストパラメータについて
 
