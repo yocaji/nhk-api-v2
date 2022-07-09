@@ -17,7 +17,7 @@ import ListList from './ListList';
 /**
  * The List model module.
  * @module model/List
- * @version 1.1.9
+ * @version 1.1.10
  */
 class List {
     /**

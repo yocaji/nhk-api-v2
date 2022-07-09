@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NowOnAir model module.
  * @module model/NowOnAir
- * @version 1.1.9
+ * @version 1.1.10
  */
 var NowOnAir = /*#__PURE__*/function () {
   /**

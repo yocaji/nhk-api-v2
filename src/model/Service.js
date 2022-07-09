@@ -17,7 +17,7 @@ import Logo from './Logo';
 /**
  * The Service model module.
  * @module model/Service
- * @version 1.1.9
+ * @version 1.1.10
  */
 class Service {
     /**
