@@ -17,7 +17,7 @@ import Program from './Program';
 /**
  * The NowOnAir model module.
  * @module model/NowOnAir
- * @version 1.1.10
+ * @version 1.1.14
  */
 class NowOnAir {
     /**

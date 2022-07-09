@@ -20,7 +20,7 @@ import Service from './Service';
 /**
  * The Description model module.
  * @module model/Description
- * @version 1.1.10
+ * @version 1.1.14
  */
 class Description {
     /**
