@@ -3,7 +3,7 @@
 const enquirer = require('enquirer')
 const format = require('date-fns/format')
 const NhkApiV2 = require('nhk-api-v2')
-const areas = require('./areas.json')
+const areas = require('./areas')
 
 class NhkRadioNow {
   async run () {

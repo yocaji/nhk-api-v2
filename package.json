@@ -1,6 +1,6 @@
 {
   "name": "nhk-api-v2",
-  "version": "1.1.10",
+  "version": "1.1.13",
   "description": "JavaScriptによるNHK番組表APIのクライアントです",
   "license": "MIT",
   "repository": {
@@ -26,7 +26,6 @@
     "@babel/cli": "^7.0.0",
     "date-fns": "^2.28.0",
     "enquirer": "^2.3.6",
-    "nhk-api-v2": "^1.1.10",
     "superagent": "^5.3.0"
   },
   "devDependencies": {
@@ -53,6 +52,7 @@
     "sinon": "^7.2.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "example"
   ]
 }
