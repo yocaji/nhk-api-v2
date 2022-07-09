@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs')
-const path = require('path')
 const enquirer = require('enquirer')
 const format = require('date-fns/format')
 const NhkApiV2 = require('nhk-api-v2')
-require('dotenv').config({ path: path.join(__dirname, './.env') })
+const areas = require('./areas.json')
 
 class NhkRadioNow {
   async run () {
@@ -17,8 +15,6 @@ class NhkRadioNow {
   }
 
   async #selectArea () {
-    const areasPath = path.join(__dirname, './areas.json')
-    const areas = JSON.parse(fs.readFileSync(areasPath, 'utf8'))
     const regions = Object.keys(areas)
 
     console.log('\x1b[1m放送局を選んでください\x1b[0m')
@@ -37,7 +33,7 @@ class NhkRadioNow {
   }
 
   async #callApi (area, service) {
-    const client = new NhkApiV2.Client(process.env.API_KEY)
+    const client = new NhkApiV2.Client(process.env.NHK_API_KEY)
     try {
       const data = await client.getProgramsNowOnAir(area, service)
       return data.nowonair_list
