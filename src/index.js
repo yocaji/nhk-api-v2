@@ -61,7 +61,7 @@ import ProgramsApi from './api/ProgramsApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1.14
+* @version 1.1.15
 */
 export {
     Client,
